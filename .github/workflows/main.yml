@@ -49,7 +49,7 @@ jobs:
       - name: Creer fichier .env
         run: | 
           cp .env.docker .env
-          mysql -u root -p ci_cd < db.sql
+          mysql -u root -p rootpw < db.sql
       - name: Cypress run
         uses: cypress-io/github-action@v7
 
