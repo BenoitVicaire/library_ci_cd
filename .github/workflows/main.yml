@@ -20,7 +20,7 @@ jobs:
       mysql:
         image: mysql:8.0
         env:
-          MYSQL_ROOT_PASSWORD: rootpw
+          MYSQL_ROOT_PASSWORD: root
           MYSQL_DATABASE: ci_cd
         ports:
           - 3306:3306
@@ -46,6 +46,10 @@ jobs:
       - name: démarrer le serveur PHP
         run: |
           php -S 127.0.0.1:8000 -t public &
+      - name: Creer fichier .env
+        run: | 
+          cp .env.docker .env
+          mysql -u root -p ci_cd < db.sql
       - name: Cypress run
         uses: cypress-io/github-action@v7
 
