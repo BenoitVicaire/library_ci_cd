@@ -3,7 +3,7 @@ describe("test de la fonction accueil de l'app", () => {
 //test addition float
     beforeEach(() => {
         // On considère que l'app tourne sur le port par défaut de Vite
-        cy.visit('127.0.0.1:8000/')
+        cy.visit('http://127.0.0.1:8000/')
         
     });
     // Test navbar
@@ -31,7 +31,7 @@ describe("test de la fonction accueil de l'app", () => {
 describe("test de la fonction inscription de l'app", () => {
 
     beforeEach(() => {
-        cy.visit('127.0.0.1:8000/register')
+        cy.visit('http://127.0.0.1:8000/register')
         cy.fixture('dataSetUser').as('userData');
     });
 
@@ -52,7 +52,7 @@ describe("test de la fonction inscription de l'app", () => {
     // Test de connexion :
 describe("Test de la fonction connexion", ()=>{
     beforeEach(() => {
-        cy.visit('127.0.0.1:8000/login')
+        cy.visit('http://127.0.0.1:8000/login')
         cy.fixture('dataSetUser').as('userData');
     });
 
