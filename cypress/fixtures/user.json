@@ -1,0 +1,15 @@
+{
+  "validUser": {
+    "fullName": "Alice Larue",
+    "email": "alice.larue@test.fr",
+    "subscription": "student",
+    "birthDate": "1995-05-15",
+    "newsletter": true
+  },
+  "minimalUser": {
+    "fullName": "Bob",
+    "email": "bob@test.com",
+    "subscription": "adult",
+    "newsletter": false
+  }
+}

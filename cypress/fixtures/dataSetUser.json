@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "firstname": "Jean",
+      "lastname": "Dupont",
+      "email": "jeandupont@gmail.com",
+      "password": "1234",
+      "confirm-password": "1234"
+    },
+    {
+      "firstname": "Marie",
+      "lastname": "Martin",
+      "email": "mariemartin@gmail.com",
+      "password": "abcd",
+      "confirm-password": "abcd"
+    },
+    {
+      "firstname": "Lucas",
+      "lastname": "Bernard",
+      "email": "lucasbernard@gmail.com",
+      "password": "pass123",
+      "confirm-password": "pass123"
+    },
+    {
+      "firstname": "Emma",
+      "lastname": "Petit",
+      "email": "emmapetit@gmail.com",
+      "password": "emma2024",
+      "confirm-password": "emma2024"
+    },
+    {
+      "firstname": "Hugo",
+      "lastname": "Robert",
+      "email": "hugorobert@gmail.com",
+      "password": "hugo123",
+      "confirm-password": "hugo123"
+    },
+    {
+      "firstname": "Chloe",
+      "lastname": "Richard",
+      "email": "chloerichard@gmail.com",
+      "password": "chloe456",
+      "confirm-password": "chloe456"
+    },
+    {
+      "firstname": "Nathan",
+      "lastname": "Durand",
+      "email": "nathandurand@gmail.com",
+      "password": "nathan789",
+      "confirm-password": "nathan789"
+    },
+    {
+      "firstname": "Lea",
+      "lastname": "Moreau",
+      "email": "leamoreau@gmail.com",
+      "password": "lea321",
+      "confirm-password": "lea321"
+    },
+    {
+      "firstname": "Enzo",
+      "lastname": "Simon",
+      "email": "enzosimon@gmail.com",
+      "password": "enzo654",
+      "confirm-password": "enzo654"
+    },
+    {
+      "firstname": "Manon",
+      "lastname": "Laurent",
+      "email": "manonlaurent@gmail.com",
+      "password": "manon987",
+      "confirm-password": "manon987"
+    }
+  ]
+}
