@@ -46,7 +46,8 @@ jobs:
       - name: démarrer le serveur PHP
         run: |
           php -S 127.0.0.1:8000 -t public &
-    
+      - name: Cypress run
+        uses: cypress-io/github-action@v7
 
 # job : build (environnemt du projet)
 
@@ -54,4 +55,5 @@ jobs:
 
 # job : test (environnement du projet)
 # installer cypress
+         
 # lancer les tests cypress
