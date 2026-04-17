@@ -44,6 +44,7 @@ jobs:
         run: | 
           cp .env.docker .env
           mysql -h 127.0.0.1 -P 3306 -u root -prootpw < db.sql
+          echo "DATABASE_HOST=127.0.0.1" >> .env
       - name: installer les dépendances
         run: | 
           composer install
