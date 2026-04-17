@@ -1,11 +1,11 @@
 // Test de categories
 describe("Test de la fonction categorie", ()=>{
     beforeEach(()=>{
-        cy.visit('http://localhost:8080/login')
+        cy.visit('127.0.0.1:8000/login')
         cy.get("#email").type("jeandupont@gmail.com");
         cy.get("#password").type("1234");
         cy.contains("button", /se connecter/i).click();
-        cy.visit('http://localhost:8080/category/all')
+        cy.visit('127.0.0.1:8000/category/all')
     });
 
     it("Le bouton ajouter une categorie doit exister, être visible et avoir un href", ()=>{
@@ -19,11 +19,11 @@ describe("Test de la fonction categorie", ()=>{
 
 describe("Test de la fonction ajout de categorie", ()=>{
     beforeEach(()=>{
-        cy.visit('http://localhost:8080/login')
+        cy.visit('127.0.0.1:8000/login')
         cy.get("#email").type("jeandupont@gmail.com");
         cy.get("#password").type("1234");
         cy.contains("button", /se connecter/i).click();
-        cy.visit('http://localhost:8080/category/add')
+        cy.visit('127.0.0.1:8000/category/add')
     });
 
     it("Doit pouvoir ajouter une catégories non existante", ()=>{
